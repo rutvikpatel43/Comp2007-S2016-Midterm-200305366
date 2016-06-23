@@ -18,6 +18,11 @@
                         <asp:ListItem Text="All" Value="10000" />
                     </asp:DropDownList>
                 </div>
+                <br />
+                <div>
+                    <asp:Label runat="server" for="CountDisplay">Count Of total Todo is:</asp:Label>
+                    <asp:Label runat="server" id="CountDisplay"></asp:Label>
+                </div>
 
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                     ID="TodoGridView" AutoGenerateColumns="false" DataKeyNames="TodoID"
@@ -36,8 +41,7 @@
                                 </asp:CheckBox>
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <%-- <asp:BoundField DataField="Completed" HeaderText="Completed" Visible="true" SortExpression="Completed" />
-                        --%>
+                        
                         <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit"
                             NavigateUrl="~/TodoDetails.aspx.cs" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server"
                             DataNavigateUrlFields="TodoID" DataNavigateUrlFormatString="TodoDetails.aspx?TodoID={0}" />

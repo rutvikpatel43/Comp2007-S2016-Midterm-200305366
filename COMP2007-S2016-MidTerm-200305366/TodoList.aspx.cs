@@ -37,7 +37,7 @@ namespace COMP2007_S2016_MidTerm_200305366
                 // query the Students Table using EF and LINQ
                 var Todos = (from allTodos in db.Todos
                                 select allTodos);
-
+                CountDisplay.Text= Todos.Count().ToString();
                 // bind the result to the GridView
                 TodoGridView.DataSource = Todos.AsQueryable().OrderBy(SortString).ToList();
                 TodoGridView.DataBind();

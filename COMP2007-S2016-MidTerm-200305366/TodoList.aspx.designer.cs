@@ -22,6 +22,15 @@ namespace COMP2007_S2016_MidTerm_200305366 {
         protected global::System.Web.UI.WebControls.DropDownList PageSizeDropDownList;
         
         /// <summary>
+        /// CountDisplay control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label CountDisplay;
+        
+        /// <summary>
         /// TodoGridView control.
         /// </summary>
         /// <remarks>
