@@ -9,6 +9,11 @@ using System.Web.UI.WebControls;
 using COMP2007_S2016_MidTerm_200305366.Models;
 using System.Web.ModelBinding;
 
+/**
+* @author: Rutvik(#200305366)
+* @date: Jun 23, 2016
+* @version: 0.0.1 - added Completed checkbox
+*/
 namespace COMP2007_S2016_MidTerm_200305366
 {
     public partial class TodoDetails : System.Web.UI.Page
@@ -42,6 +47,12 @@ namespace COMP2007_S2016_MidTerm_200305366
                 }
             }
         }
+        /**
+                * This method gets the user to the todolist
+                *  
+                * @method CancelButton_Click
+                * @return {void}
+                */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("../TodoList.aspx");

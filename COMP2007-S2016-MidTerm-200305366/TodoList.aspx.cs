@@ -10,6 +10,11 @@ using COMP2007_S2016_MidTerm_200305366.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
 
+/**
+* @author: Rutvik(#200305366)
+* @date: Jun 23, 2016
+* @version: 0.0.1 - added Completed checkbox
+*/
 namespace COMP2007_S2016_MidTerm_200305366
 {
     public partial class TodoList : System.Web.UI.Page
@@ -26,7 +31,12 @@ namespace COMP2007_S2016_MidTerm_200305366
                 this.GetTodos();
             }
         }
-
+        /**
+         * This method gets the data
+         *  
+         * @method GetTodos
+         * @return {void}
+         */
         protected void GetTodos()
         {
             // connect to EF
@@ -43,6 +53,12 @@ namespace COMP2007_S2016_MidTerm_200305366
                 TodoGridView.DataBind();
             }
         }
+        /**
+         * This method gets the selected index change
+         *  
+         * @method PageSizeDropDownList_SelectedIndexXhanged
+         * @return {void}
+         */
         protected void PageSizeDropDownList_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Set the new Page size

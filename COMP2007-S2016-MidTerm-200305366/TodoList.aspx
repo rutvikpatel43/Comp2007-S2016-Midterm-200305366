@@ -1,4 +1,10 @@
 ﻿<%@ Page Title="Todo List" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="TodoList.aspx.cs" Inherits="COMP2007_S2016_MidTerm_200305366.TodoList" %>
+<%--
+        Name : Rutvik(#200305366)
+        File Name: TodoList.aspx
+        Description: Used to add edit update todo list.
+        Website:http://comp2007-s2016-midterm-200305366.azurewebsites.net/TodoList.aspx
+--%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
@@ -34,6 +40,7 @@
                         <asp:BoundField DataField="TodoName" HeaderText="Todo Name" Visible="true" SortExpression="TodoName" />
                         <asp:BoundField DataField="TodoNotes" HeaderText="Todo Notes" Visible="true" SortExpression="TodoNotes" />
                         <asp:TemplateField HeaderText="Completed" SortExpression="Completed">
+                            <%-- Added check box column to display completed from the database--%>
                             <ItemTemplate>
                                 <asp:CheckBox ID="Completed"
                                     CssClass="gridCB" runat="server"
