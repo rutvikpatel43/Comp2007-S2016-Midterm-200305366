@@ -127,5 +127,10 @@ namespace COMP2007_S2016_MidTerm_200305366
                 }
             }
         }
+
+        protected void Completed_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
