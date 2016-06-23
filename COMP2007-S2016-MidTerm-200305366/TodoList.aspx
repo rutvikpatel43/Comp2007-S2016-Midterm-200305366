@@ -43,7 +43,7 @@
                             <%-- Added check box column to display completed from the database--%>
                             <ItemTemplate>
                                 <asp:CheckBox ID="Completed"
-                                    CssClass="gridCB" runat="server"
+                                    CssClass="gridCB" runat="server" AutoPostBack="true" DataNavigateUrlFields="TodoID" DataNavigateUrlFormatString="TodoList.aspx?TodoID={0}"
                                     Checked='<% # Convert.ToBoolean(Eval("Completed")) %>' OnCheckedChanged="Completed_CheckedChanged">
                                 </asp:CheckBox>
                             </ItemTemplate>
